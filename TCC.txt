@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Interativo para Artigo Científico (TCC)</title>
+<script src="https://www.google.com/search?q=https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://www.google.com/search?q=https://fonts.googleapis.com">
+<link rel="preconnect" href="https://www.google.com/search?q=https://fonts.gstatic.com" crossorigin>
+<link href="https://www.google.com/search?q=https://fonts.googleapis.com/css2%3Ffamily%3DInter:wght%40400%3B500%3B700%26display%3Dswap" rel="stylesheet">
+<style>
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f8f7f4;
+color: #404040;
+}
+.nav-link {
+transition: color 0.3s, border-bottom-color 0.3s;
+}
+.nav-link:hover {
+color: #005A9C;
+}
+.active-link {
+color: #005A9C;
+border-bottom: 2px solid #005A9C;
+}
+.card {
+background-color: #ffffff;
+border: 1px solid #e5e7eb;
+border-radius: 0.75rem;
+padding: 1.5rem;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+transition: box-shadow 0.3s;
+}
+.card:hover {
+box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+.accordion-button {
+transition: background-color 0.3s;
+}
+.accordion-button:hover {
+background-color: #f3f4f6;
+}
+.accordion-content {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out;
+}
+.citation-example {
+background-color: #f9fafb;
+border-left: 4px solid #005A9C;
+padding: 1rem;
+margin-top: 1rem;
+border-radius: 0.25rem;
+}
+.long-citation-example {
+margin-left: 4cm;
+font-size: 10pt;
+line-height: 1;
+}
+.btn-primary {
+background-color: #007BFF;
+color: white;
+padding: 0.5rem 1rem;
+border-radius: 0.5rem;
+font-weight: 500;
+transition: background-color 0.3s;
+}
+.btn-primary:hover {
+background-color: #005A9C;
+}
+</style>
+</head>
+<body class="antialiased">
+<header class="bg-white/80 backdrop-blur-md sticky top-0 z-10 border-b border-gray-200">
+<nav class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-16">
+<h1 class="text-xl font-bold text-gray-800">Guia de TCC</h1>
+<div class="hidden sm:flex sm:space-x-8">
+<a href="#estrutura" class="nav-link text-gray-600 font-medium pb-1">Estrutura</a>
+<a href="#passos" class="nav-link text-gray-600 font-medium pb-1">Passo a Passo</a>
+<a href="#citacoes" class="nav-link text-gray-600 font-medium pb-1">Citações</a>
+<a href="#formatacao" class="nav-link text-gray-600 font-medium pb-1">Formatação</a>
+<a href="#modelo" class="nav-link text-gray-600 font-medium pb-1">Modelo</a>
+</div>
+</div>
+</nav>
+</header>
+
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+    <section class="text-center mb-12 md:mb-16">
+        <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-gray-900">Guia Interativo para Produção do Artigo Científico</h2>
+        <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Olá, futuro(a) especialista! Este material foi pensado para ser seu companheiro na elaboração do seu artigo científico. Vamos percorrer juntos cada etapa, de forma clara e objetiva.</p>
+    </section>
+
+    <div class="space-y-16">
+        <section id="estrutura">
+            <h3 class="text-2xl font-bold text-center mb-8">Etapa 1: Entendendo a Estrutura do Artigo</h3>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Conforme o manual, seu artigo deve ter entre 10 e 20 páginas e seguir uma estrutura clara. Clique nos itens abaixo para ver os detalhes de cada parte.</p>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="accordion-item card">
+                    <button class="accordion-button w-full text-left p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-800">1. Elementos Pré-Textuais</span>
+                        <span class="transform transition-transform duration-300 text-blue-600">▼</span>
+                    </button>
+                    <div class="accordion-content px-4 pb-2">
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 mt-2">
+                            <li><strong>Título:</strong> Deve ser claro, conciso e refletir o tema do trabalho.</li>
+                            <li><strong>Nome do Autor:</strong> Seu nome completo.</li>
+                            <li><strong>Resumo:</strong> Um parágrafo único (150-250 palavras) com tema, objetivo, metodologia e conclusões.</li>
+                            <li><strong>Palavras-chave:</strong> De 3 a 5 termos que identificam os assuntos do artigo.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item card">
+                    <button class="accordion-button w-full text-left p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-800">2. Elementos Textuais (O Corpo do Artigo)</span>
+                         <span class="transform transition-transform duration-300 text-blue-600">▼</span>
+                    </button>
+                    <div class="accordion-content px-4 pb-2">
+                        <ul class="list-disc list-inside space-y-2 text-gray-700 mt-2">
+                            <li><strong>Introdução:</strong> Apresenta o tema, problema, justificativa e objetivos.</li>
+                            <li><strong>Metodologia:</strong> Descreve como a pesquisa foi feita (revisão bibliográfica).</li>
+                            <li><strong>Resultados e Discussões:</strong> Onde você apresenta e discute as informações, construindo sua argumentação.</li>
+                            <li><strong>Conclusão:</strong> Retoma os objetivos, sintetiza os resultados e responde ao problema de pesquisa.</li>
+                        </ul>
+                    </div>
+                </div>
+                 <div class="accordion-item card">
+                    <button class="accordion-button w-full text-left p-4 rounded-lg flex justify-between items-center">
+                        <span class="text-lg font-semibold text-gray-800">3. Elementos Pós-Textuais</span>
+                         <span class="transform transition-transform duration-300 text-blue-600">▼</span>
+                    </button>
+                    <div class="accordion-content px-4 pb-2">
+                         <ul class="list-disc list-inside space-y-2 text-gray-700 mt-2">
+                            <li><strong>Referências:</strong> A lista de todas as obras citadas, em ordem alfabética.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="passos">
+            <h3 class="text-2xl font-bold text-center mb-8">Etapa 2: O Passo a Passo Interativo</h3>
+             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="card">
+                    <h4 class="font-bold text-xl mb-2 text-gray-900">1. Introdução</h4>
+                    <p class="text-gray-600 mb-4">É o cartão de visitas. Responda:</p>
+                    <ul class="list-disc list-inside space-y-1 text-sm">
+                       <li><strong>O quê?</strong> (Seu Tema)</li>
+                       <li><strong>Por quê?</strong> (Problema e Justificativa)</li>
+                       <li><strong>Para quê?</strong> (Objetivos do Estudo)</li>
+                    </ul>
+                </div>
+                <div class="card">
+                     <h4 class="font-bold text-xl mb-2 text-gray-900">2. Metodologia</h4>
+                    <p class="text-gray-600">Explique o caminho percorrido. Para este TCC, o método é a **revisão bibliográfica**. Mencione os tipos de materiais e as bases de dados consultadas (Google Acadêmico, Scielo, etc.).</p>
+                </div>
+                <div class="card">
+                    <h4 class="font-bold text-xl mb-2 text-gray-900">3. Resultados e Discussões</h4>
+                    <p class="text-gray-600">O coração do artigo. Organize suas ideias e argumentos dialogando com os autores. Use subtítulos para organizar.</p>
+                    <p class="mt-4 p-3 bg-yellow-100 border-l-4 border-yellow-400 text-yellow-800 rounded-r-lg text-sm"><strong>Dica de Ouro:</strong> Após citar um autor, comente, critique e compare. É aqui que sua autoria aparece!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="citacoes">
+            <h3 class="text-2xl font-bold text-center mb-8">Etapa 3: Dominando as Citações (ABNT)</h3>
+            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Citações dão credibilidade ao seu trabalho. Use o simulador abaixo para ver como formatar cada tipo corretamente.</p>
+            <div class="text-center mb-8">
+                <a href="https://www.youtube.com/watch?v=kSF2lFKmP1M" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    Ver Tutorial em Vídeo
+                </a>
+            </div>
+            <div class="card max-w-4xl mx-auto">
+                <div class="flex flex-wrap justify-center gap-2 mb-6 border-b pb-4">
+                    <button data-type="indireta" class="citation-btn btn-primary">Citação Indireta</button>
+                    <button data-type="direta-curta" class="citation-btn bg-gray-200 text-gray-700 p-2 rounded-md hover:bg-gray-300 transition">Direta Curta</button>
+                    <button data-type="direta-longa" class="citation-btn bg-gray-200 text-gray-700 p-2 rounded-md hover:bg-gray-300 transition">Direta Longa</button>
+                </div>
+                
+                <div id="citation-content">
+                    <!-- Content will be injected by JS -->
+                </div>
+
+                <div class="mt-8 border-t pt-6">
+                    <h4 class="font-semibold text-lg text-center">✍️ Teste seu Conhecimento!</h4>
+                    <p class="text-center text-sm text-gray-500 mb-4">Cite a frase: "A educação transforma o indivíduo e a coletividade." (FERREIRA, João, 2024, p. 42).</p>
+                    <div class="space-y-4">
+                         <div>
+                            <label class="font-medium">Como citação INDIRETA:</label>
+                            <div class="flex gap-2 mt-1">
+                                <input type="text" id="quiz-indireta" class="w-full border-gray-300 rounded-md shadow-sm" placeholder="Escreva com suas palavras...">
+                                <button onclick="checkQuiz('indireta')" class="btn-primary text-sm whitespace-nowrap">Ver Exemplo</button>
+                            </div>
+                            <div id="answer-indireta" class="hidden mt-2 text-sm text-green-700"></div>
+                        </div>
+                        <div>
+                            <label class="font-medium">Como citação DIRETA CURTA:</label>
+                            <div class="flex gap-2 mt-1">
+                                <input type="text" id="quiz-direta" class="w-full border-gray-300 rounded-md shadow-sm" placeholder="Copie o trecho...">
+                                <button onclick="checkQuiz('direta')" class="btn-primary text-sm whitespace-nowrap">Ver Exemplo</button>
+                            </div>
+                            <div id="answer-direta" class="hidden mt-2 text-sm text-green-700"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formatacao">
+            <h3 class="text-2xl font-bold text-center mb-8">Etapa 4: Checklist de Formatação Final</h3>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card space-y-4">
+                    <h4 class="font-bold text-xl mb-2 text-gray-900">Regras Gerais</h4>
+                     <p class="flex items-center"><span class="text-green-500 mr-2">✓</span> <strong>Fonte:</strong> Times New Roman ou Arial, tamanho 12.</p>
+                     <p class="flex items-center"><span class="text-green-500 mr-2">✓</span> <strong>Alinhamento:</strong> Justificado.</p>
+                     <p class="flex items-center"><span class="text-green-500 mr-2">✓</span> <strong>Espaçamento:</strong> 1,5 entre linhas (simples para citações longas).</p>
+                     <p class="flex items-center"><span class="text-green-500 mr-2">✓</span> <strong>Parágrafo (Artigo):</strong> Sem recuo na primeira linha.</p>
+                </div>
+                 <div class="card">
+                    <h4 class="font-bold text-xl mb-2 text-gray-900">Margens do Documento</h4>
+                    <div class="relative w-full h-64 bg-gray-100 border-2 border-dashed border-gray-400 p-8 flex items-center justify-center mt-4 rounded-md">
+                        <div class="absolute top-2 left-1/2 -translate-x-1/2 text-sm font-semibold">Superior: 3 cm</div>
+                        <div class="absolute bottom-2 left-1/2 -translate-x-1/2 text-sm font-semibold">Inferior: 2 cm</div>
+                        <div class="absolute left-2 top-1/2 -translate-y-1/2 -rotate-90 text-sm font-semibold">Esquerda: 3 cm</div>
+                        <div class="absolute right-2 top-1/2 -translate-y-1/2 rotate-90 text-sm font-semibold">Direita: 2 cm</div>
+                        <div class="w-full h-full bg-white shadow-inner p-4 text-xs text-gray-500">
+                            <p>Seu texto aqui...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="modelo">
+            <h3 class="text-2xl font-bold text-center mb-8">Etapa 5: Modelo Pré-Formatado</h3>
+             <p class="text-center text-gray-600 max-w-3xl mx-auto mb-8">Para facilitar seu trabalho, utilize nosso modelo pré-configurado no Google Docs ou assista aos tutoriais de formatação para Docs e Word.</p>
+            <div class="flex flex-wrap justify-center items-center gap-4">
+                <a href="https://docs.google.com/document/d/1_R-s4z2kLbcc2ePHwG6zN3_jEj-TMWpz/edit" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center justify-center py-3 px-6 rounded-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-blue-300">
+                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Modelo Google Docs
+                </a>
+                <a href="https://www.youtube.com/watch?v=25IvSMeuPo4" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    Tutorial para Docs
+                </a>
+                <a href="https://www.youtube.com/watch?v=bLX1mgCVI1I" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-red-600 hover:bg-red-700 transition-colors duration-300">
+                    <svg class="w-5 h-5 mr-2 -ml-1" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path>
+                    </svg>
+                    Tutorial para Word
+                </a>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="text-center py-8 mt-12 border-t border-gray-200">
+    <p class="text-gray-600">Espero que este guia ajude você a produzir um excelente TCC. Conte comigo para tirar dúvidas!</p>
+    <p class="text-gray-500 text-sm mt-4">Por CAP QOC PM JOÃO PAULO SILVA DANTAS</p>
+</footer>
+
+<script>
+    window.addEventListener('load', function() {
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = document.querySelectorAll('main section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active-link');
+                        if (link.getAttribute('href').substring(1) === entry.target.id) {
+                            link.classList.add('active-link');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+
+        sections.forEach(section => observer.observe(section));
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                document.querySelector(link.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const accordions = document.querySelectorAll('.accordion-item');
+        accordions.forEach(item => {
+            const button = item.querySelector('.accordion-button');
+            const content = item.querySelector('.accordion-content');
+            const icon = button.querySelector('span:last-child');
+
+            button.addEventListener('click', () => {
+                const isExpanded = content.style.maxHeight && content.style.maxHeight !== '0px';
+                if (isExpanded) {
+                    content.style.maxHeight = '0px';
+                    content.style.paddingTop = '0';
+                    content.style.paddingBottom = '0';
+                    icon.style.transform = 'rotate(0deg)';
+                } else {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    content.style.paddingTop = '0.5rem';
+                    content.style.paddingBottom = '0.5rem';
+                    icon.style.transform = 'rotate(180deg)';
+                }
+            });
+        });
+        
+        const citationButtons = document.querySelectorAll('.citation-btn');
+        const citationContent = document.getElementById('citation-content');
+
+        const citationData = {
+            'indireta': {
+                title: 'Citação Indireta (A mais comum!)',
+                description: 'Você lê a ideia do autor e a reescreve com as <strong>suas palavras</strong>.',
+                example: `<p class="font-medium">Formato:</p><p class="font-mono text-sm">SOBRENOME (ANO) ou (SOBRENOME, ANO)</p><div class="citation-example"><p><strong>Exemplo 1:</strong> Conforme Silva (2023), a tecnologia é um pilar essencial para o avanço da sociedade.</p><p class="mt-2"><strong>Exemplo 2:</strong> A tecnologia é um pilar essencial para o avanço da sociedade (SILVA, 2023).</p></div>`
+            },
+            'direta-curta': {
+                title: 'Citação Direta Curta (até 3 linhas)',
+                description: 'Você copia exatamente um trecho e o insere no seu parágrafo, entre <strong>"aspas duplas"</strong>.',
+                 example: `<p class="font-medium">Formato:</p><p class="font-mono text-sm">(SOBRENOME, ANO, p. X)</p><div class="citation-example"><p><strong>Exemplo:</strong> A afirmação de que "...a tecnologia é fundamental para a sociedade" (SILVA, 2023, p. 15) reforça a necessidade de seu uso ético.</p></div>`
+            },
+            'direta-longa': {
+                title: 'Citação Direta Longa (mais de 3 linhas)',
+                description: 'O trecho é apresentado em um parágrafo separado, com formatação especial.',
+                 example: `<ul class="list-disc list-inside text-sm space-y-1 my-2"><li>Recuo de <strong>4 cm</strong> da margem esquerda.</li><li>Fonte <strong>menor</strong> (tamanho 10).</li><li><strong>Sem aspas</strong>.</li><li>Espaçamento entre linhas <strong>simples</strong>.</li></ul><div class="citation-example"><p class="font-medium mb-2">Exemplo 1 (Autor no final):</p><div class="long-citation-example">Todas essas fortes tendências influenciam poderosamente as organizações e seu estilo de administrar as pessoas. O mundo dos negócios ficou completamente diferente, exigente, dinâmico, mutável e incerto. E as pessoas sentem o impacto dessas influências e necessitam de um apoio e suporte por parte dos seus líderes e gerentes. (CHIAVENATO, 2004, p. 42)</div></div><div class="citation-example"><p class="font-medium mb-2">Exemplo 2 (Autor no início):</p><p>Para Chiavenato (2004, p. 42):</p><div class="long-citation-example mt-2">Todas essas fortes tendências influenciam poderosamente as organizações e seu estilo de administrar as pessoas. O mundo dos negócios ficou completamente diferente, exigente, dinâmico, mutável e incerto. E as pessoas sentem o impacto dessas influências e necessitam de um apoio e suporte por parte dos seus líderes e gerentes.</div></div>`
+            }
+        };
+        
+        function updateCitationContent(type) {
+            const data = citationData[type];
+            citationContent.innerHTML = `<h4 class="font-bold text-xl text-gray-900">${data.title}</h4><p class="mt-2 text-gray-600">${data.description}</p><div class="mt-4">${data.example}</div>`;
+            citationButtons.forEach(btn => {
+                if (btn.dataset.type === type) {
+                    btn.classList.remove('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+                    btn.classList.add('btn-primary');
+                } else {
+                    btn.classList.add('bg-gray-200', 'text-gray-700', 'hover:bg-gray-300');
+                    btn.classList.remove('btn-primary');
+                }
+            });
+        }
+
+        citationButtons.forEach(button => button.addEventListener('click', () => updateCitationContent(button.dataset.type)));
+        updateCitationContent('indireta');
+
+    });
+
+    function checkQuiz(type) {
+        if (type === 'indireta') {
+            const answerEl = document.getElementById('answer-indireta');
+            answerEl.innerHTML = '<strong>Exemplo:</strong> Segundo Ferreira (2024), a educação é capaz de modificar tanto o ser humano quanto a sociedade.';
+            answerEl.classList.remove('hidden');
+        } else if (type === 'direta') {
+            const answerEl = document.getElementById('answer-direta');
+            answerEl.innerHTML = '<strong>Exemplo:</strong> De acordo com o autor, "a educação transforma o indivíduo e a coletividade" (FERREIRA, 2024, p. 42).';
+            answerEl.classList.remove('hidden');
+        }
+    }
+</script>
+
+</body>
+</html>
